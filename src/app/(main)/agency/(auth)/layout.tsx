@@ -1,9 +1,9 @@
 import React from 'react'
 
-const AuthLayout = () => {
+const AuthLayout = ({children} : {children: React.ReactNode}) => {
   return (
-    <div>
-      Authlayout
+    <div className='h-full flex items-center justify-center'>
+      {children}
     </div>
   )
 }
