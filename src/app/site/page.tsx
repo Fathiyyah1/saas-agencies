@@ -1,10 +1,13 @@
-import Image from "next/image";
-
-export default function Home() {
+import Link from 'next/link'
+import clsx from 'clsx'
+import { Button } from '@/components/ui/button'
+import { Check } from 'lucide-react'
+export default async function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <>
+    <section className="h-full w-full pt-36 relative flex items-center justify-between flex-col bg-black">
      
-     page
-    </main>
-  );
+    <div></div>
+    </section></>
+  )
 }
