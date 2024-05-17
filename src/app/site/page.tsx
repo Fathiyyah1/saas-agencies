@@ -17,7 +17,7 @@ export default async function Home() {
        bg-clip-text relative'>
         <h1 className='text-9xl font-bold text-center md:text-[300px]'> VIV</h1>
          </div>
-
+          <div className='flex justify-center items-center relative md:mt-[-70px]'></div>
     </section></>
   )
 }
