@@ -2,6 +2,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { Button } from '@/components/ui/button'
 import { Check } from 'lucide-react'
+
 export default async function Home() {
   return (
     <>
@@ -17,7 +18,13 @@ export default async function Home() {
        bg-clip-text relative'>
         <h1 className='text-9xl font-bold text-center md:text-[300px]'> VIV</h1>
          </div>
-          <div className='flex justify-center items-center relative md:mt-[-70px]'></div>
+          <div className='flex justify-center items-center relative md:mt-[-70px]'>
+            <img src={'/assets/preview.png'} alt='banner image'
+            height={1200}
+            width={1200}
+            className='rounded-tl-2xl rounded-tr-2xl border-2 border-muted'
+            />
+          </div>
     </section></>
   )
 }
