@@ -2,6 +2,7 @@ import React from 'react';
 import { User } from '@clerk/nextjs/server'
 import Image from 'next/image'
 import Link from 'next/link';
+import { UserButton } from '@clerk/nextjs';
 
 type Props = {
     user?: null | User
@@ -31,7 +32,9 @@ const Navigation = ({user}: Props) => {
             <aside className='flex gap-2 items-center'>
                 <Link href={'/agency'}
                 className='bg-primary text-white p-2 px-4 rounded-md hover:bg-primary/80'
-                ></Link>
+                >Login</Link>
+                <UserButton />
+                <ModeToggle />
             </aside>
         </div>
     )
