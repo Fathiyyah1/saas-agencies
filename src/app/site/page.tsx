@@ -15,7 +15,7 @@ export default async function Home() {
        <p className='text-center'>Run your agency, in one place</p>
        <div className='bg-gradient-to-r from-primary to-secondary-forefround text-transparent
        bg-clip-text relative'>
-        <h1 className='text-9xl font-bold text-center md:text-[300px]'></h1>
+        <h1 className='text-9xl font-bold text-center md:text-[300px]'> VIV</h1>
          </div>
 
     </section></>
