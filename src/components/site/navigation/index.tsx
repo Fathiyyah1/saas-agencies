@@ -1,6 +1,7 @@
 import React from 'react';
 import { User } from '@clerk/nextjs/server'
 import Image from 'next/image'
+import Link from 'next/link';
 
 type Props = {
     user?: null | User
@@ -16,7 +17,14 @@ const Navigation = ({user}: Props) => {
                 height={40}
                 alt="plur logo"
                 />
+                <span className='text-xl font-bold'>VIV</span>
             </aside>
+            <nav className='hidden mg:block absolute left-[50%] top-[50%] 
+            transform translate-x-[50%] translate-y-[-50%]'>
+                <ul className='flex items-center justify-center gap-8'>
+                    <Link href={'#'}>Pricing</Link>
+                </ul>
+            </nav>
         </div>
     )
 }
