@@ -14,7 +14,9 @@ export default async function Home() {
        [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
        <p className='text-center'>Run your agency, in one place</p>
        <div className='bg-gradient-to-r from-primary to-secondary-forefround text-transparent
-       bg-clip-text relative'> </div>
+       bg-clip-text relative'>
+        <h1 className='text-9xl font-bold text-center md:text-[300px]'></h1>
+         </div>
 
     </section></>
   )
