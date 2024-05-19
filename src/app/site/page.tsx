@@ -31,7 +31,7 @@ export default async function Home() {
     </section>
     <section className='flex justify-center items-center flex-col gap-4 mt-20'>
       <h2 className='text-4xl text-center'>Choose what fits you right </h2>
-      <p className='text-muted-foreground'></p>
+      <p className='text-muted-foreground text-center'>Our straightforward pricing plans are tailored to meet your needs. If {" you're"} not <br /> </p>
     </section>
     </>
   )
