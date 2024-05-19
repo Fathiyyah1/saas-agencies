@@ -28,6 +28,10 @@ export default async function Home() {
             <div className='
              bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10'></div>
           </div>
-    </section></>
+    </section>
+    <section className='flex justify-center items-center flex-col gap-4 mt-20'>
+      
+    </section>
+    </>
   )
 }
