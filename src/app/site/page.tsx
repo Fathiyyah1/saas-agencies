@@ -30,7 +30,7 @@ export default async function Home() {
           </div>
     </section>
     <section className='flex justify-center items-center flex-col gap-4 mt-20'>
-      
+      <h2 className='text-4xl text-center'>Choose what fits you right </h2>
     </section>
     </>
   )
