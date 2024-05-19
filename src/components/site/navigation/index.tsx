@@ -3,6 +3,7 @@ import { User } from '@clerk/nextjs/server'
 import Image from 'next/image'
 import Link from 'next/link';
 import { UserButton } from '@clerk/nextjs';
+import { ModeToggle } from '@/components/global/mode-toggle';
 
 type Props = {
     user?: null | User
