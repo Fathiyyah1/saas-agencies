@@ -20,15 +20,17 @@ export default function RootLayout({
   return (
     <ClerkProvider appearance={{ baseTheme: dark }}>
     <html lang="en" suppressHydrationWarning>
+    <body className={inter.className}>
       <ThemeProvider 
       attribute="class"
       defaultTheme="system"
       enableSystem
       disableTransitionOnChange
       >
-      <body className={inter.className}>{children}
-      </body>
-      </ThemeProvider>
+    {children}
+  
+      </ThemeProvider> 
+         </body>
     </html></ClerkProvider>
   );
 }
