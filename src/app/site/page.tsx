@@ -46,7 +46,19 @@ export default async function Home() {
             <span className='text-4xl font-bold'>{card.price}</span>
             <span className='text-muted-foreground'>/m</span>
           </CardContent>
-          <CardFooter className='flex flex-col items-start gap-4'> <div></div></CardFooter>
+          <CardFooter className='flex flex-col items-start gap-4'>
+            <div>
+             {card.features.map((feature) => (
+              <div
+              key={feature} 
+              className='flex gap-2 items-center' >
+
+            <Check className='text-muted-foreground' />
+            <p>{feature}</p>
+            </div>
+             ))}
+             </div>
+            </CardFooter>
         </Card>
       ))}
       </div>
