@@ -3,6 +3,8 @@ import clsx from 'clsx'
 import { Button } from '@/components/ui/button'
 import { Check } from 'lucide-react'
 import Image from 'next/image'
+import { pricingCards } from '@/lib/constants'
+import { Card } from '@/components/ui/card'
 
 export default async function Home() {
   return (
@@ -32,7 +34,9 @@ export default async function Home() {
     <section className='flex justify-center items-center flex-col gap-4 mt-20'>
       <h2 className='text-4xl text-center'>Choose what fits you right </h2>
       <p className='text-muted-foreground text-center'>Our straightforward pricing plans are tailored to meet your needs. If {" you're"} not <br /> ready to commit you can get started for free</p>
-      <div className='flex items-center justify-center gap-4 flex-wrap mt-6'></div>
+      <div className='flex items-center justify-center gap-4 flex-wrap mt-6'>
+        {pricingCards.map((card) => <Card key={card.title}>{card.description}</Card>)}
+      </div>
     </section>
     </>
   )
