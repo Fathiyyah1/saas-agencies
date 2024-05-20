@@ -62,7 +62,7 @@ export default async function Home() {
              className={clsx('w-full text-center bg-primary p-2 rounded-md', 
               {'!bg-muted-foreground': card.title !== 'Unlimited Saas'}
              )}
-             ></Link>
+             >Get Started</Link>
             </CardFooter>
         </Card>
       ))}
