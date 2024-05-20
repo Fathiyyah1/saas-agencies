@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Check } from 'lucide-react'
 import Image from 'next/image'
 import { pricingCards } from '@/lib/constants'
-import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 
 export default async function Home() {
   return (
@@ -42,6 +42,11 @@ export default async function Home() {
             </CardTitle>
             <CardDescription>{card.description}</CardDescription>
           </CardHeader>
+          <CardContent>
+            <span className='text-4xl font-bold'>{card.price}</span>
+            <span className='text-muted-foreground'>/m</span>
+          </CardContent>
+          <CardFooter className='flex flex-col items-start gap-4'> <div></div></CardFooter>
         </Card>
       ))}
       </div>
