@@ -35,7 +35,7 @@ export default async function Home() {
       <h2 className='text-4xl text-center'>Choose what fits you right </h2>
       <p className='text-muted-foreground text-center'>Our straightforward pricing plans are tailored to meet your needs. If {" you're"} not <br /> ready to commit you can get started for free</p>
       <div className='flex items-center justify-center gap-4 flex-wrap mt-6'>
-        {pricingCards.map((card) => <Card key={card.title}>{card.description}</Card>)}
+        {pricingCards.map((card) =>( <Card key={card.title}>{card.description}</Card>))}
       </div>
     </section>
     </>
