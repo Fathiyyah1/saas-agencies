@@ -58,7 +58,7 @@ export default async function Home() {
             </div>
              ))}
              </div>
-             <Link href={'/agency?'}></Link>
+             <Link href={`/agency?plan=${card.priceId}`}></Link>
             </CardFooter>
         </Card>
       ))}
