@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Check } from 'lucide-react'
 import Image from 'next/image'
 import { pricingCards } from '@/lib/constants'
-import { Card } from '@/components/ui/card'
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 export default async function Home() {
   return (
@@ -35,7 +35,15 @@ export default async function Home() {
       <h2 className='text-4xl text-center'>Choose what fits you right </h2>
       <p className='text-muted-foreground text-center'>Our straightforward pricing plans are tailored to meet your needs. If {" you're"} not <br /> ready to commit you can get started for free</p>
       <div className='flex items-center justify-center gap-4 flex-wrap mt-6'>
-        {pricingCards.map((card) =>( <Card key={card.title}>{card.description}</Card>))}
+        {pricingCards.map((card) =>( <Card key={card.title} className={clsx('w-[300px] flex flex-col justify-between', {'border-2 border-primary': card.title === 'Unlimited Saas'})}>
+          <CardHeader>
+            <CardTitle className={clsx('', {'text-muted-foreground': card.title !== 'Unlimited Saas',})}>
+              {card.title}
+            </CardTitle>
+            <CardDescription>{card.description}</CardDescription>
+          </CardHeader>
+        </Card>
+      ))}
       </div>
     </section>
     </>
