@@ -25,11 +25,12 @@ export default authMiddleware({
           new URL(`/${customSubDomain}${pathWithSearchParams}`, req.url)
         )
       }
-
+        //if user access url then will direct to sign-in url 
       if (url.pathname === '/sign-in' || url.pathname === '/sign-up'){
         return NextResponse.redirect(new URL(`/agency/sign-in`, req.url))
       }
-
+      
+      //if the user trying to access website url / /site then yes will bring it 
       if (
         url.pathname === '/' ||
         (url.pathname === '/site' && url.host === process.env.NEXT_PUBLIC_DOMAIN)
