@@ -35,10 +35,15 @@ export default authMiddleware({
         return NextResponse.rewrite(new URL('/site', req.url))
       }
 
-      
-    }
+      if (
+        url.pathname.startsWith('/agency') ||
+        url.pathname.startsWith('/subaccount')
+      ) {
+        return NextResponse.rewrite(new URL(`${pathWithSearchParams}`, req.url))
+      }
+    },
 
-});
+})
 
 export const config = {
   matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
