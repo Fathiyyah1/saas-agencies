@@ -1,4 +1,4 @@
-import { withUt } from 'uploadthing/tw';
+import { withUt } from 'uploadthing/tw'
 import colors from 'tailwindcss/colors'
 
 module.exports = withUt({
