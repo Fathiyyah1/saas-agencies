@@ -37,7 +37,7 @@ export default authMiddleware({
       ){
         return NextResponse.rewrite(new URL('/site', req.url))
       }
-
+        //user access agency and dashboard then will lead them to it 
       if (
         url.pathname.startsWith('/agency') ||
         url.pathname.startsWith('/subaccount')
