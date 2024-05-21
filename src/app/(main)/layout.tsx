@@ -1,10 +1,10 @@
+import { ClerkProvider } from '@clerk/nextjs'
+import { dark } from '@clerk/themes'
 import React from 'react'
 
-const layout = () => {
+const layout = ({children} : {children: React.ReactNode}) => {
   return (
-    <div>
-      
-    </div>
+        <ClerkProvider appearance={{baseTheme:dark}}>{children}</ClerkProvider>
   )
 }
 
