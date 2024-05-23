@@ -13,3 +13,7 @@ datasource db {
   url      = env("DATABASE_URL")
   relationMode = "prisma"
 }
+
+enum Role {
+  AGENCY_OWNER
+}
