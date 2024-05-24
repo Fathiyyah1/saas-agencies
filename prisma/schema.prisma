@@ -24,4 +24,5 @@ model User {
   avatarUrl String @db.Text
   email String @unique 
   createdAt DateTime @default(now()) 
+  updateAt DateTime @updateAt
 }
