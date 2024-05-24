@@ -26,5 +26,5 @@ model User {
   createdAt DateTime @default(now()) 
   updateAt DateTime @updateAt
   role Role @default(SUBACCOUNT_USER)
-  agencyId 
+  agencyId String?
 }
