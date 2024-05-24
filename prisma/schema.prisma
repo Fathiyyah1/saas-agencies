@@ -23,4 +23,5 @@ model User {
   name String 
   avatarUrl String @db.Text
   email String @unique 
+  createdAt DateTime @default(now()) 
 }
